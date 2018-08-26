@@ -1,8 +1,11 @@
-<h1>Kysymysgeneraattori</h1>
-<button type="button" onclick="generateQuestion();">
-  Uusi kysymys
-</button>
-<div id="quesRes"></div>
+<div align="center">
+	<h1>Tehtävägeneraattori</h1>
+	<button type="button" onclick="generateQuestion();">
+	  Uusi kysymys
+	</button>
+	</br>
+	<div id="quesRes"></div>
+</div>
 <script>
 	function generateQuestion() {
 		var rand = Math.floor(Math.random() * quizObj.length);
