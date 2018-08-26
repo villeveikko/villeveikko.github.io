@@ -11,7 +11,7 @@
 		if(quizObj[rand].image !== "") {
 			str += "<img src='" + quizObj[rand].image + "'></br>";
 		}
-		str+= "<img src='" + quizObj[rand].question + "'></br>";
+		str+= "<p>" + quizObj[rand].question + "</p>";
 
 		document.getElementById("quesRes").innerHTML = str;
   }
