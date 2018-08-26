@@ -5,8 +5,8 @@
 <div id="quesRes"></div>
 <script>
 	function generateQuestion() {
-		var rand = Math.floor(Math.random());
-
+		var rand = Math.floor(Math.random() * quizObj.length);
+		console.log(rand);
 		var str = "";
 		if(quizObj[rand].image !== "") {
 			str += "<img src='" + quizObj[rand].image + "'></br>";
