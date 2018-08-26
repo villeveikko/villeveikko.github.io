@@ -1,1 +1,32 @@
-Hello world!
+<h1>Kysymysgeneraattori</h1>
+<button type="button" onlick="generateQuestion()">
+  Uusi kysymys
+</button>
+<div id="quesRes"></div>
+<script>
+	function generateQuestion() {
+		var rand = Math.floor(Math.random());
+
+		var str = "";
+		if(quizObj[rand].image !== "") {
+			str += "<img src='" + quizObj[rand].image + "'></br>";
+		}
+		str+= "<img src='" + quizObj[rand].question + "'></br>";
+
+		document.getElementById("quesRes").innerHTML = str;
+  }
+  var quizObj = [
+    { 
+        "question": "Silitä kissaa",
+        "image": "https://r.hswstatic.com/w_907/gif/tesla-cat.jpg"
+   },
+   { 
+        "question": "Leiki koiran kanssa",
+        "image": "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"
+   },
+    { 
+        "question": "Nuku pommiin",
+        "image": "https://www.ikea.com/us/en/images/products/malm-high-bed-frame-storage-boxes__0416868_PE577784_S4.JPG"
+   }
+];
+</script> 
